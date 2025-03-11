@@ -6,7 +6,7 @@ from PIL import Image, ImageTk
 import io
 import threading
 
-HOST = '127.0.0.1'
+HOST = '127.0.0.1' #localhost:
 PORT = 12345
 
 # Lista global para almacenar imágenes y evitar que se borren de la memoria
