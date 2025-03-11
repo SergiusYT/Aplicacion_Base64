@@ -31,7 +31,7 @@ def handle_client(conn, addr):
 
     while True:
         try:
-            data = conn.recv(1024 * 128)  # Buffer grande para imágenes
+            data = conn.recv(1024 * 128)  # Un buffer más grande (recv(1024 * 128)) permite recibir imágenes completas de hasta 128 KB en un solo mensaje, reduciendo el riesgo de fragmentación.
             if not data:
                 break
 
